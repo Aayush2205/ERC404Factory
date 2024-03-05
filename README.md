@@ -1,6 +1,11 @@
 
 # ERC404Factory
 
+# Website Link
+
+[Live Preview](https://erc-404-factory.vercel.app/)
+
+
 ## Introduction
 
 ERC-404 is an experimental, mixed ERC-20 / ERC-721 implementation with native liquidity and fractionalization. While these two standards are not designed to be mixed, this implementation strives to do so in as robust a manner as possible while minimizing tradeoffs.
@@ -41,13 +46,11 @@ npm start
 
 ### ERC404Factory.sol 
 
-Smart Contract to call the BaseERC404 and to deploy it with the required inputs. 
+Smart Contract to call the MinimalERC404 and to deploy it with the required inputs. 
 
 ### MinimalERC404.sol 
 
 Smart Contract for my ERC404 token.
 
-# Website Link
 
-[Live Preview](https://erc-404-factory.vercel.app/)
 
