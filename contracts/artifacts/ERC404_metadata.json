@@ -1,0 +1,1188 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AlreadyExists",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "DecimalsTooLow",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InsufficientAllowance",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidApproval",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidExemption",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidOperator",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidRecipient",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidSender",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidSigner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidSpender",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidTokenId",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "MintLimitReached",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NotFound",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "OwnedIndexOverflow",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "PermitDeadlineExpired",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "QueueEmpty",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "QueueFull",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "QueueOutOfBounds",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "RecipientIsERC721TransferExempt",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "Unauthorized",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "UnsafeRecipient",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "DOMAIN_SEPARATOR",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ID_ENCODING_PREFIX",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "valueOrId_",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value_",
+						"type": "uint256"
+					}
+				],
+				"name": "erc20Approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					}
+				],
+				"name": "erc20BalanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "erc20TotalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value_",
+						"type": "uint256"
+					}
+				],
+				"name": "erc20TransferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "erc721Approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					}
+				],
+				"name": "erc721BalanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "erc721TotalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target_",
+						"type": "address"
+					}
+				],
+				"name": "erc721TransferExempt",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "erc721TransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getERC721QueueLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "start_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count_",
+						"type": "uint256"
+					}
+				],
+				"name": "getERC721TokensInQueue",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minted",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "nonces",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					}
+				],
+				"name": "owned",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "erc721Owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v_",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r_",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s_",
+						"type": "bytes32"
+					}
+				],
+				"name": "permit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data_",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator_",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved_",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "state_",
+						"type": "bool"
+					}
+				],
+				"name": "setSelfERC721TransferExempt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value_",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "valueOrId_",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "units",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"errors": {
+				"QueueEmpty()": [
+					{
+						"details": "An operation (e.g. {front}) couldn't be completed due to the queue being empty."
+					}
+				],
+				"QueueFull()": [
+					{
+						"details": "A push operation couldn't be completed due to the queue being full."
+					}
+				],
+				"QueueOutOfBounds()": [
+					{
+						"details": "An operation (e.g. {at}) couldn't be completed due to an index being out of bounds."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "This function assumes the operator is attempting to approve      an ERC-721 if valueOrId_ is a possibly valid ERC-721 token id.      Unlike setApprovalForAll, spender_ must be allowed to be 0x0 so      that approval can be revoked."
+				},
+				"erc20Approve(address,uint256)": {
+					"details": "Providing type(uint256).max for approval value results in an      unlimited approval that is not deducted from on transfers."
+				},
+				"erc20TransferFrom(address,address,uint256)": {
+					"details": "This function is recommended for ERC20 transfers"
+				},
+				"erc721TransferFrom(address,address,uint256)": {
+					"details": "This function is recommended for ERC721 transfers."
+				},
+				"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "Providing type(uint256).max for permit value results in an      unlimited approval that is not deducted from on transfers."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				},
+				"transfer(address,uint256)": {
+					"details": "This function assumes the operator is attempting to transfer as ERC-20      given this function is only supported on the ERC-20 interface.      Treats even large amounts that are valid ERC-721 ids as ERC-20s."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "This function assumes the operator is attempting to transfer an ERC-721      if valueOrId is a possible valid token id."
+				}
+			},
+			"stateVariables": {
+				"ID_ENCODING_PREFIX": {
+					"details": "Constant for token id encoding"
+				},
+				"_BITMASK_ADDRESS": {
+					"details": "Address bitmask for packed ownership data"
+				},
+				"_BITMASK_OWNED_INDEX": {
+					"details": "Owned index bitmask for packed ownership data"
+				},
+				"_INITIAL_CHAIN_ID": {
+					"details": "Initial chain id for EIP-2612 support"
+				},
+				"_INITIAL_DOMAIN_SEPARATOR": {
+					"details": "Initial domain separator for EIP-2612 support"
+				},
+				"_erc721TransferExempt": {
+					"details": "Addresses that are exempt from ERC-721 transfer, typically for gas savings (pairs, routers, etc)"
+				},
+				"_owned": {
+					"details": "Array of owned ids in ERC-721 representation"
+				},
+				"_ownedData": {
+					"details": "Packed representation of ownerOf and owned indices"
+				},
+				"_storedERC721Ids": {
+					"details": "The queue of ERC-721 tokens stored in the contract."
+				},
+				"allowance": {
+					"details": "Allowance of user in ERC-20 representation"
+				},
+				"balanceOf": {
+					"details": "Balance of user in ERC-20 representation"
+				},
+				"decimals": {
+					"details": "Decimals for ERC-20 representation"
+				},
+				"getApproved": {
+					"details": "Approval in ERC-721 representaion"
+				},
+				"isApprovedForAll": {
+					"details": "Approval for all in ERC-721 representation"
+				},
+				"minted": {
+					"details": "Current mint counter which also represents the highest      minted id, monotonically increasing to ensure accurate ownership"
+				},
+				"name": {
+					"details": "Token name"
+				},
+				"nonces": {
+					"details": "EIP-2612 nonces"
+				},
+				"symbol": {
+					"details": "Token symbol"
+				},
+				"totalSupply": {
+					"details": "Total supply in ERC-20 representation"
+				},
+				"units": {
+					"details": "Units for ERC-20 representation"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"DOMAIN_SEPARATOR()": {
+					"notice": "Returns domain initial domain separator, or recomputes if chain id is not equal to initial chain id"
+				},
+				"approve(address,uint256)": {
+					"notice": "Function for token approvals"
+				},
+				"erc20TransferFrom(address,address,uint256)": {
+					"notice": "Function for ERC-20 transfers from."
+				},
+				"erc721TransferExempt(address)": {
+					"notice": "Function to check if address is transfer exempt"
+				},
+				"erc721TransferFrom(address,address,uint256)": {
+					"notice": "Function for ERC-721 transfers from."
+				},
+				"ownerOf(uint256)": {
+					"notice": "Function to find owner of a given ERC-721 token"
+				},
+				"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Function for EIP-2612 permits (ERC-20 only)."
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"notice": "Function for ERC-721 transfers with contract support. This function only supports moving valid ERC-721 ids, as it does not exist on the ERC-20 spec and will revert otherwise."
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"notice": "Function for ERC-721 transfers with contract support and callback data. This function only supports moving valid ERC-721 ids, as it does not exist on the ERC-20 spec and will revert otherwise."
+				},
+				"setApprovalForAll(address,bool)": {
+					"notice": "Function for ERC-721 approvals"
+				},
+				"setSelfERC721TransferExempt(bool)": {
+					"notice": "Function for self-exemption"
+				},
+				"tokenURI(uint256)": {
+					"notice": "tokenURI must be implemented by child contract"
+				},
+				"transfer(address,uint256)": {
+					"notice": "Function for ERC-20 transfers."
+				},
+				"transferFrom(address,address,uint256)": {
+					"notice": "Function for mixed transfers from an operator that may be different than 'from'."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC404.sol": "ERC404"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/interfaces/IERC165.sol": {
+			"keccak256": "0xde7e9fd9aee8d4f40772f96bb3b58836cbc6dfc0227014a061947f8821ea9724",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a",
+				"dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC721Receiver.sol": {
+			"keccak256": "0x12808acc0c2cbc0b9068755711fd79483b4f002e850d25e0e72e735765b6cd99",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8fd1ab9e3091d4c4fc4b34c25b54df5c092c849c8c09d722a34186bd051b0890",
+				"dweb:/ipfs/QmUqykAZfKRHEkYVRmXKsFqvLwyUFPrukdWdAmXDkixJAL"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0x7f7a26306c79a65fb8b3b6c757cd74660c532cd8a02e165488e30027dd34ca49",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d01e0b2b837ee2f628545e54d8715b49c7ef2befd08356c2e7f6c50dde8a1c22",
+				"dweb:/ipfs/QmWBAn6y2D1xgftci97Z3qR9tQnkvwQpYwFwkTvDMvqU4i"
+			]
+		},
+		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x4296879f55019b23e135000eb36896057e7101fb7fb859c5ef690cf14643757b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87b3541437c8c443ccd36795e56a338ed12855eec17f8da624511b8d1a7e14df",
+				"dweb:/ipfs/QmeJQCtZrQjtJLr6u7ZHWeH3pBnjtLWzvRrKViAi7UZqxL"
+			]
+		},
+		"contracts/ERC404.sol": {
+			"keccak256": "0x1acc672f97c3df70476b5272e510bfb517782bdb96a173b28cf891cdd31f6d8a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://527ecdab8f0772d785d106f19c5c7f7b3989d52d95149e6a23e20d9dd2f49ca6",
+				"dweb:/ipfs/QmUPAX8QZDFx3UNweDWx5jKxPbV9Us2CTvzUNb7Km5LV5B"
+			]
+		},
+		"contracts/interfaces/IERC404.sol": {
+			"keccak256": "0x0e255bff928e8df981f5783df2606c353a3aca12346cc154617d7a40e17cb76e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cdd7302dd9692c8a544e5e27569a9e77dc6f3d2aaf2f1b0f17673e95a440cc07",
+				"dweb:/ipfs/QmR8mF7WEZyG2RbgaiXQfTS9uDTLCiKV8GnGXgjVn8kTcU"
+			]
+		},
+		"contracts/lib/DoubleEndedQueue.sol": {
+			"keccak256": "0x88993eec6a322e2ae85c7a2689f582c58adf7c426d18b6ba6499b7b7fcb6cae2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://64f33c505457eb6edcff81f17e6c04791f6a22a16be39c0fe863ebbd4fb7b0ec",
+				"dweb:/ipfs/QmRsGv56n3T5nyY96wVzYXKwqYBwncFKgvo9Gn3mJzsvve"
+			]
+		},
+		"contracts/lib/ERC20Events.sol": {
+			"keccak256": "0x4e085068d5ed01f11a38c4b5116a1fff1fe204d4c7248ff7cb1775da9e6b3b28",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5541192273299c5ba5b03fdb198b2a03ad3d560bac4845f0375b4921d9269d00",
+				"dweb:/ipfs/QmYz9Zv3WXoD87Gmqhtv6EShc8s4Fk1e8TwBSmWYuMoLWK"
+			]
+		},
+		"contracts/lib/ERC721Events.sol": {
+			"keccak256": "0xedd45c71b16ff6a0948b6ff3846d1641b1cb6b239a47279fe612185862ab670a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://16257b4747e18b9baecf7059d4ca255a0cc958aa08757d6b8e3085919c76a9b1",
+				"dweb:/ipfs/QmS1a7RrUcH9aW3HKXtQ9MRc1BiMEnGwdV3Bk8wcRdNGq5"
+			]
+		}
+	},
+	"version": 1
+}

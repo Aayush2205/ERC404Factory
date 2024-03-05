@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "QueueEmpty",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "QueueFull",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "QueueOutOfBounds",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "A sequence of items with the ability to efficiently push and pop items (i.e. insert and remove) on both ends of the sequence (called front and back). Among other access patterns, it can be used to implement efficient LIFO and FIFO queues. Storage use is optimized, and all operations are O(1) constant time. This includes {clear}, given that the existing queue contents are left in storage. The struct is called `Uint256Deque`. This data structure can only be used in storage, and not in memory. ```solidity DoubleEndedQueue.Uint256Deque queue; ```",
+			"errors": {
+				"QueueEmpty()": [
+					{
+						"details": "An operation (e.g. {front}) couldn't be completed due to the queue being empty."
+					}
+				],
+				"QueueFull()": [
+					{
+						"details": "A push operation couldn't be completed due to the queue being full."
+					}
+				],
+				"QueueOutOfBounds()": [
+					{
+						"details": "An operation (e.g. {at}) couldn't be completed due to an index being out of bounds."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lib/DoubleEndedQueue.sol": "DoubleEndedQueue"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lib/DoubleEndedQueue.sol": {
+			"keccak256": "0x88993eec6a322e2ae85c7a2689f582c58adf7c426d18b6ba6499b7b7fcb6cae2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://64f33c505457eb6edcff81f17e6c04791f6a22a16be39c0fe863ebbd4fb7b0ec",
+				"dweb:/ipfs/QmRsGv56n3T5nyY96wVzYXKwqYBwncFKgvo9Gn3mJzsvve"
+			]
+		}
+	},
+	"version": 1
+}
