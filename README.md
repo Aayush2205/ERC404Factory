@@ -43,7 +43,7 @@ npm start
 
 Smart Contract to call the BaseERC404 and to deploy it with the required inputs. 
 
-### BaseERC404.sol 
+### MinimalERC404.sol 
 
 Smart Contract for my ERC404 token.
 
