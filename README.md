@@ -49,5 +49,5 @@ Smart Contract for my ERC404 token.
 
 # Website Link
 
-[live preview](erc-404-factory.vercel.app)
+[Live Preview](https://erc-404-factory.vercel.app/)
 
